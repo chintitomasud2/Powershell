@@ -12,3 +12,12 @@
 Get-Service vss
 Get-Service | where {$_.status -eq 'running'}
 get-service vss | select *                 //service ar whole information
+Restart-Service dnscache
+Start-Service -DisplayName "Volume Shadow copy"
+
+
+
+
+Set-Service Dnscache -StartupType Disabled
+
+Get-EventLog -LogName 'Windows PowerShell'
