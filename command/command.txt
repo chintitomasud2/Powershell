@@ -1,0 +1,4 @@
+ get-process
+ get-process notepad
+ get-process notepad |Stop-Process
+ get-process notepad |Stop-Process -WhatIf   //ai command asole ki korbe ta dekhabe
