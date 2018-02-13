@@ -27,3 +27,11 @@ Get-EventLog -LogName 'Windows PowerShell' -Newest 3
  
  Get-Command -Noun  service                  //service related command gulo dekhabe
 Get-Command -Verb   Get
+
+///////
+Display
+
+Get-Service Re* |Format-table DisplayName ,status
+
+ls | Out-File hairehobena.txt
+ls | Export-Csv csvfileyahoo.cs
